@@ -22,26 +22,7 @@ const Movie = (props) => {
     });
     
   },[]);
-  // const blah = ( () => {
-
-  //   axios
-  //   .get(`http://localhost:5000/api/movies/1`)
-  //   .then(response => {
-  //     setMovie(response.data);
-  //     console.log(response);
-  //   })
-  //   .catch(error => {
-  //     console.error(error);
-  //   });
-  // })
-
-  // blah()
-  // Uncomment this only when you have moved on to the stretch goals
-  // const saveMovie = () => {
-    //   const addToSavedList = props.addToSavedList;
-    //   addToSavedList(movie)
-    // }
-    
+  
     if (!movie) {
       return <div>Loading movie information...</div>;
     }
@@ -67,7 +48,6 @@ const Movie = (props) => {
         ))}
       </div>
       <div className="save-button">Save</div>
-    
     </div>
   );
 }
